@@ -1,42 +1,10 @@
 # Tech-task-backend
-# Tech-Task-Backend
+
 
 ## Task 1
-* Implement JWT authentication
-```
-Request Example
-{
-  "username": "user123",
-  "password": "securepa55w0rd"
-}
-Response example
-{
-  "token" : "eddjehjefgjhefhe.fuwigfy3gryfygsf.fjeghejgf4ygfwhegfjhwef',
-  "FullName" : "John Doe"
-}
-```
-* Admin can Add user
-```
-Request example
-{
-  "username" : "user123",
-  "password" : "securepa55w0rd",
-  "firstName" : "John",
-  "lastName" : "Doe",
-  "roles" :
-    "manager",
-    "teacher"
-}
-```
 
-### Role Management
-* CRUD for roles
-* Assign user roles
-* Default roles - Admin, Manager
-
-## Task 2
-
-### Create Group - Only for Admin users
+### Create Group
+( Optional - Only for Admin users)
 ```
 Request example
 {
@@ -45,7 +13,8 @@ Request example
     "price" : 300
 }
 ```
-### Update Group - Accessible to Admin users
+### Update Group
+(Optional - Accessible to only Admin users)
 ```
 Request example
 {
@@ -56,7 +25,8 @@ Request example
 }
 ```
 
-### Get Group - Accessible to Admin and Teacher
+### Get Group
+(Optional - Accessible to Admin and Teacher)
 ```
 Request GET -  groups/{id}
 Response Example
@@ -83,7 +53,8 @@ Response Example
     ]
 }
 ```
-### Get groups list - Accessible to Admin and Teacher
+### Get groups list
+(Optional - Accessible to Admin and Teacher)
 ```
 Response example
 [
@@ -191,6 +162,40 @@ Request example
   "groupId": 2
 }
 ```
+
+## Task 2 (Optional)
+* Implement JWT authentication
+```
+Request Example
+{
+  "username": "user123",
+  "password": "securepa55w0rd"
+}
+Response example
+{
+  "token" : "eddjehjefgjhefhe.fuwigfy3gryfygsf.fjeghejgf4ygfwhegfjhwef',
+  "FullName" : "John Doe"
+}
+```
+* Admin can Add user
+```
+Request example
+{
+  "username" : "user123",
+  "password" : "securepa55w0rd",
+  "firstName" : "John",
+  "lastName" : "Doe",
+  "roles" :
+    "manager",
+    "teacher"
+}
+```
+
+### Role Management
+* CRUD for roles
+* Assign user roles
+* Default roles - Admin, Manager
+
 
 
         
